@@ -28,8 +28,14 @@ const Footer = () => {
                             {footerLinks.map(link => (
                                 <Link href={link.href}
                                       key={link.href}
-                                      className="text-white/70
-                                    hover:text-blue-300 transition-colors duration-300">
+                                      className="                   
+                                       px-6.5 py-3 rounded-full
+                                       text-medium font-medium
+                                       text-black bg-blue-300
+                                       hover:bg-blue-200 hover:shadow-lg
+                                       focus:ring-2 focus:ring-blue-400 focus:outline-none
+                                       transition-all duration-300
+                                      ">
                                     {link.label}
                                 </Link>
                             ))}
